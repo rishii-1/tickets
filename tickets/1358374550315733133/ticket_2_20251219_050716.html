@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket #2 Transcript</title>
+    <style>
+        * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+        }
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #36393f; 
+            color: #dcddde;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .container {
+            background: #2f3136;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+        .header {
+            background: #202225;
+            padding: 25px;
+            border-bottom: 3px solid #7289da;
+        }
+        .header h1 {
+            color: #ffffff;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        .header .subtitle {
+            color: #b9bbbe;
+            font-size: 16px;
+        }
+        .ticket-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            padding: 20px;
+            background: #2f3136;
+        }
+        .info-card {
+            background: #202225;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #7289da;
+        }
+        .info-label {
+            font-size: 12px;
+            color: #b9bbbe;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+        .info-value {
+            font-size: 16px;
+            color: #ffffff;
+            font-weight: 500;
+        }
+        .chat-container {
+            padding: 20px;
+        }
+        .message {
+            display: flex;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #40444b;
+        }
+        .message:last-child {
+            border-bottom: none;
+        }
+        .avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        .message-content {
+            flex: 1;
+        }
+        .message-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+        .username {
+            font-weight: 600;
+            color: #ffffff;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+        .timestamp {
+            color: #72767d;
+            font-size: 14px;
+        }
+        .message-text {
+            font-size: 15px;
+            color: #dcddde;
+            word-wrap: break-word;
+            line-height: 1.5;
+        }
+        .message-text a {
+            color: #00aff4;
+            text-decoration: none;
+        }
+        .message-text a:hover {
+            text-decoration: underline;
+        }
+        .attachments {
+            margin-top: 10px;
+        }
+        .attachment {
+            background: #202225;
+            border-radius: 6px;
+            padding: 10px;
+            margin-top: 8px;
+            display: inline-flex;
+            align-items: center;
+        }
+        .attachment img {
+            max-width: 300px;
+            border-radius: 6px;
+            margin-top: 8px;
+            display: block;
+        }
+        .embed {
+            background: #202225;
+            border-left: 4px solid #4f545c;
+            border-radius: 6px;
+            padding: 15px;
+            margin-top: 10px;
+            max-width: 520px;
+        }
+        .embed-title {
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 5px;
+            font-size: 16px;
+        }
+        .embed-description {
+            color: #dcddde;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+        .footer {
+            text-align: center;
+            padding: 25px;
+            color: #72767d;
+            font-size: 14px;
+            border-top: 1px solid #40444b;
+            background: #202225;
+        }
+        .footer a {
+            color: #7289da;
+            text-decoration: none;
+        }
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-left: 10px;
+        }
+        .badge.open { background: #43b581; color: white; }
+        .badge.claimed { background: #faa61a; color: white; }
+        .badge.closed { background: #f04747; color: white; }
+        .code-block {
+            background: #2f3136;
+            border: 1px solid #202225;
+            border-radius: 6px;
+            padding: 12px;
+            font-family: 'Consolas', 'Monaco', monospace;
+            font-size: 14px;
+            margin: 8px 0;
+            overflow-x: auto;
+        }
+        .mention {
+            background: #4f545c;
+            padding: 2px 6px;
+            border-radius: 4px;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎫 Ticket #2: test 2````</h1>
+            <div class="subtitle">Study Bot Support Server • Transcript Generated 2025-12-19 05:07:16 AM</div>
+        </div>
+        
+        <div class="ticket-info">
+            <div class="info-card">
+                <div class="info-label">Created By</div>
+                <div class="info-value">Unknown</div>
+            </div>
+            <div class="info-card">
+                <div class="info-label">Created At</div>
+                <div class="info-value">2025-12-18 06:42:53 PM</div>
+            </div>
+            <div class="info-card">
+                <div class="info-label">Closed At</div>
+                <div class="info-value">2025-12-19 05:07:16 AM</div>
+            </div>
+            <div class="info-card">
+                <div class="info-label">Status</div>
+                <div class="info-value">
+                    Open
+                    <span class="badge open">Open</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="chat-container">
+            <div class="message"><img src="https://cdn.discordapp.com/avatars/1281971536345042964/a2061da2bf9396ea71aefa97f2847595.png?size=1024" class="avatar" alt="Avatar"><div class="message-content"><div class="message-header"><span class="username">STXTEMP</span><span class="timestamp">2025-12-18 18:42:53</span></div><div class="embed"><div class="embed-title">🎫 Ticket: test 2````</div><div class="embed-description">Hello &lt;@737913632872202281&gt;! Support will assist you shortly.</div></div></div></div>
+<div class="message"><img src="https://cdn.discordapp.com/avatars/1281971536345042964/a2061da2bf9396ea71aefa97f2847595.png?size=1024" class="avatar" alt="Avatar"><div class="message-content"><div class="message-header"><span class="username">STXTEMP</span><span class="timestamp">2025-12-18 18:42:59</span></div><div class="embed"><div class="embed-title">Closing Ticket</div><div class="embed-description">Closing this ticket and generating transcript...</div></div></div></div>
+        </div>
+        
+        <div class="footer">
+            <p>Transcript generated by Discord Ticket Bot</p>
+            <p>This transcript is an archive of the conversation in ticket #2</p>
+        </div>
+    </div>
+</body>
+</html>
